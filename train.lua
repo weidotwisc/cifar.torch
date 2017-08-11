@@ -176,7 +176,8 @@ function test()
   confusion:updateValids()
   print('Test accuracy:', confusion.totalValid * 100)
   
-  if testLogger then
+  --if testLogger then
+  if false then
     paths.mkdir(opt.save)
     testLogger:add{train_acc, confusion.totalValid * 100}
     testLogger:style{'-','-'}
